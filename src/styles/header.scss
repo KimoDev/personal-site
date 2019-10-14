@@ -1,0 +1,19 @@
+.header {
+ min-height: 125px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ z-index: 0;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  align-self: center;
+  
+}
+
+.menu {
+  float: right;
+  pointer-events: all;
+}

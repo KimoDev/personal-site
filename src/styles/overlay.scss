@@ -1,0 +1,35 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(235, 49, 49);
+  position: fixed;
+  z-index: 1;
+}
+
+.overlay-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px;
+  text-align: center;
+  li a {
+    text-decoration: none;
+    color: #1c1c1c;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

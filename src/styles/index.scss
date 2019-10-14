@@ -1,0 +1,150 @@
+@import './config//mixins';
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+.container {
+  height: 100vh;
+  margin: 0px 30px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  
+  @include tablet {
+    margin: 0px 50px;
+  }
+
+  @include desktop-large {
+    margin: 0px 100px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+
+  @include desktop {
+    max-width: 515px;
+  }
+
+  @include desktop-large {
+    max-width: 515px;
+  }
+}
+
+.content-right {
+  display: flex;
+  
+}
+
+p {
+  line-height: 24px;
+}
+
+.aboutme {
+  font-weight: 500;
+}
+
+.projects-btn {
+  border: #1c1c1c solid 2px;
+  background-color: #1c1c1c;
+  color: #fff;
+  width: 120px;
+  font-size: 11px; 
+  margin-top: 15px;
+  margin-right: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 5px 10px;
+
+  &--alt {
+    border: #1c1c1c solid 2px;
+    width: 120px;
+    background-color: transparent;
+    color: #1c1c1c;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 0px !important;
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 11px; 
+
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #1c1c1c;
+    + .projects-btn--alt {
+      background-color: #1c1c1c;
+      color: #fff;
+    } 
+  }
+  
+}
+
+
+
+
+
+
+
+
+.footer {
+  max-height: 150px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0px;
+  line-height: 50px;
+  @include tablet {
+    font-size: 32px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+  }
+
+  @include desktop-large {
+    font-size: 42px;
+  }
+}
+
+.intro {
+  margin: 10px 0px 0px 0px;
+}
+
+
+.frontImg {
+  width: 375px;
+  height: 350px;
+  background: url('../images/kimodev.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-left: 28px;
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    width: 450px
+  }
+}
