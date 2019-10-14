@@ -47,7 +47,7 @@ const HomePage = () => {
 
         <div className="content-left" >
         
-          <h1 className="title">Hi, I’m Kimo. A Developer, Designer & Content Creator</h1>
+          <h1 className="title">Hi, I’m Kimo.I'm A Developer, Designer & Content Creator</h1>
           <p className="intro">A 21 year old Computer Science Student, currently in my 
           final year studying at the University of Kent.</p>
           <p className="intro">As a self-taught individual for 7+ years, I have strengthen
