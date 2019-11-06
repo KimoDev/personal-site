@@ -1,9 +1,19 @@
+@import './config//mixins';
+
 .container {
   height: 100vh;
   margin: 0px 100px;
   display: flex;
   flex: 1;
   flex-direction: column;
+
+  @include tablet {
+    margin: 0px 50px;
+  }
+
+  @include desktop-large {
+    margin: 0px 100px;
+  }
 }
 
 .image-wrapper {
