@@ -1,0 +1,23 @@
+.container {
+  height: 100vh;
+  margin: 0px 100px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.image-wrapper {
+  width: 500px;
+  height: 300px;
+  background-color: #80AED0;
+}
+
+.content-wrapper {
+  max-width: 500px
+}
+
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}

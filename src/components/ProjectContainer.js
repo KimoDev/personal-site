@@ -1,10 +1,12 @@
 import React from 'react';
 
+import '../styles/projects.scss';
+
 const ProjectContainer = () => {
   return (
     <div>
       <div className="image-wrapper">
-        <img src="" alt=""/>
+        {/*<img src="" alt=""/> */}
       </div>
       <div className="content-wrapper">
         <h1>Project Title</h1>
