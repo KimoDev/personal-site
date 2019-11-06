@@ -1,19 +1,23 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
-import '../styles/projects.scss';
+import styles from '../styles/component-styles/projectContainer.module.scss'
 
 const ProjectContainer = () => {
   return (
-    <div>
-      <div className="image-wrapper">
+    <div className={styles.ProjectContainer}>
+      <div className={styles.imageWrapper}>
         {/*<img src="" alt=""/> */}
       </div>
-      <div className="content-wrapper">
+      <div className={styles.contentWrapper}>
         <h1>Project Title</h1>
         <p>Web Application - REACT | NODEJS | SASS</p>
         <p>Lucas ipsum dolor sit amet choka bib wicket hutt 
         h’nemthean roan aramandi.</p>
-        <button>View Project</button>
+        
+        <Link to="/weather">
+          <button>View Project</button>
+        </Link>
       </div>
     </div>
   )

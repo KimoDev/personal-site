@@ -1,7 +1,7 @@
 @import './config//mixins';
 
 .container {
-  height: 100vh;
+  height: 100%;
   margin: 0px 100px;
   display: flex;
   flex: 1;
@@ -16,18 +16,23 @@
   }
 }
 
-.image-wrapper {
-  width: 500px;
-  height: 300px;
-  background-color: #80AED0;
+.titleWrapper {
+  max-width: 800px;
+  margin: 40px 0px 0px 0px;
 }
 
-.content-wrapper {
-  max-width: 500px
-}
 
-.project-row {
+
+.projectRow{
   display: flex;
   justify-content: space-between;
   flex: 1;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  height: 300px;
+  background-color: #1c1c1c;
 }
