@@ -12,7 +12,7 @@ const Overlay = (props) => {
     <div className="overlay-wrapper">
       <ul>
         <animated.li  style={fade}>
-          <Link to="/project">Projects</Link>
+          <Link to="/Project">Projects</Link>
         </animated.li>
         <li>
           <Link to="/about">About</Link>

@@ -12,6 +12,7 @@ import '../styles/global.scss';
 
 const HomePage = () => {
   const [nav, toggleNav] = useState(false);
+  
   const fade = useSpring({
     opacity: nav ? 0.95 : 0
   });
@@ -74,7 +75,7 @@ const HomePage = () => {
         </div>
         
     </div>
-    
+
     </div>
     
   );
