@@ -1,11 +1,8 @@
 import React, { useState } from "react"
-import {useSpring, animated} from 'react-spring'
 
 import Header from '../components/Header';
 import Social from '../components/Social';
-import Overlay from '../components/Overlay';
-import FooterOverlay from '../components/FooterOverlay';
-
+import RenderOverlay from '../components/RenderOverlay';
 
 import styles from '../styles/index.module.scss';
 import '../styles/global.scss';
@@ -13,31 +10,10 @@ import '../styles/global.scss';
 const HomePage = () => {
   const [nav, toggleNav] = useState(false);
   
-  const fade = useSpring({
-    opacity: nav ? 0.95 : 0
-  });
-
-  const renderOverlay = () => {
-    return (
-      
-        <animated.div className={styles.main} style={fade}>
-        <div className={styles.container}>
-        <Header 
-        navClicked={() => toggleNav(!nav)} 
-        icon={require('../images/icons/close-icon.svg')}/>
-            <Overlay nav={nav}/>
-        <div className={styles.footer}>
-          <FooterOverlay />
-        </div>
-          </div>
-        </animated.div>
-      
-    );
-  }
   
   return (
     <div>
-    {nav ? renderOverlay() : null }
+    {nav ? <RenderOverlay nav toggleNav={toggleNav} /> : null }
       <div className={styles.container}>
       
       <Header 
