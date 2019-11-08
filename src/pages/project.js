@@ -12,7 +12,7 @@ const Project = () => {
   const [nav, toggleNav] = useState(false);
 
   return (
-    <div>
+    <div className={styles.root}>
     
     {nav ? <RenderOverlay nav toggleNav={toggleNav}/> : null }
       <div className={styles.container}>
@@ -36,10 +36,11 @@ const Project = () => {
           <ProjectContainer />
           <ProjectContainer />
         </div>
-      </div>
         <div className={styles.footer}>
         
-        </div>
+      </div>
+      </div>
+      
     </div>
   )
 }

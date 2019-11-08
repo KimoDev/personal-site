@@ -12,7 +12,7 @@ const HomePage = () => {
   
   
   return (
-    <div>
+    <div className={styles.root}>
     {nav ? <RenderOverlay nav toggleNav={toggleNav} /> : null }
       <div className={styles.container}>
       
@@ -24,7 +24,7 @@ const HomePage = () => {
 
         <div className={styles.contentLeft} >
         
-          <h1 className={styles.title}>Hi, I’m Kimo.I'm A Developer, Designer & Content Creator</h1>
+          <h1 className={styles.title}>Hi, I’m Kimo. <br /> A Developer, Designer <br />& Content Creator</h1>
           <p className={styles.intro}>A 21 year old Computer Science Student, currently in my 
           final year studying at the University of Kent.</p>
           <p className={styles.intro}>As a self-taught individual for 7+ years, I have strengthen

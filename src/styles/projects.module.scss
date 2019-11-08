@@ -1,18 +1,26 @@
 @import './config//mixins';
 
+.root {
+  display: flex;
+  justify-content: center;
+  
+}
+
 .container {
+  max-width: 1280px;
+  width: 100vw;
   height: 100%;
-  margin: 0px 100px;
+  margin: 0px 50px;
   display: flex;
   flex: 1;
   flex-direction: column;
-
+  
   @include tablet {
     margin: 0px 50px;
   }
 
   @include desktop-large {
-    margin: 0px 100px;
+    margin: 0px 50px;
   }
 }
 
@@ -30,8 +38,10 @@
 }
 
 .footer {
-  width: 100%;
   position: relative;
+  width: 99.225vw;
+  margin-left: -49.59vw;
+  left: 50%;
   margin-top: 50px;
   height: 300px;
   background-color: #1c1c1c;
