@@ -1,7 +1,7 @@
 import React from 'react';
 import Overlay from '../components/Overlay';
 import FooterOverlay from '../components/FooterOverlay';
-import Header from '../components/Header';
+import Header from './Header';
 import overlayStyles from '../styles/index.module.scss';
 
 
