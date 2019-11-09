@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import {useSpring, animated} from 'react-spring'
+import { Helmet } from "react-helmet"
 
 import Header from '../components/Header';
 import Social from '../components/Social';
@@ -39,6 +40,10 @@ const HomePage = () => {
   
   return (
     <div>
+      <Helmet>
+          <title>KimoDev</title>
+          <meta name="description" content="The Official KimoDev site" />
+      </Helmet>
     {nav ? renderOverlay() : null }
       <Alert Message="This site is a work in progress" status={alert} onClick={() => toggleAlert(true)} />
       <div className="container">
