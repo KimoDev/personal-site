@@ -2,12 +2,18 @@ import React from 'react';
 import styles from '../styles/component-styles/alert.module.scss';
 import close from '../images/icons/close-icon.svg'
 
-const Alert = (props) => {
+const Alert = ({Message, status, onClick}) => {
   return (
-    <div className={styles.label}>
-      <p>{props.Message}</p>
-      <img src={close} alt="close icon"/>
-    </div>
+    <>
+      { status 
+      ? null 
+      : <div className={styles.label}>
+          <p>{Message}</p>
+          <img src={close} alt="close icon" onClick={onClick}/>
+        </div> 
+      }
+    </>
+    
   )
 }
 

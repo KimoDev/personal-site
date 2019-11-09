@@ -13,6 +13,8 @@ import '../styles/global.scss';
 
 const HomePage = () => {
   const [nav, toggleNav] = useState(false);
+  const [alert, toggleAlert] = useState(false);
+
   const fade = useSpring({
     opacity: nav ? 0.95 : 0
   });
@@ -38,7 +40,7 @@ const HomePage = () => {
   return (
     <div>
     {nav ? renderOverlay() : null }
-      <Alert Message="This site is a work in progress" />
+      <Alert Message="This site is a work in progress" status={alert} onClick={() => toggleAlert(true)} />
       <div className="container">
       
       <Header 
