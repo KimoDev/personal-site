@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Social from '../components/Social';
 import Overlay from '../components/Overlay';
 import FooterOverlay from '../components/FooterOverlay';
+import Alert from '../components/Alert';
 
 
 import '../styles/index.scss';
@@ -37,6 +38,7 @@ const HomePage = () => {
   return (
     <div>
     {nav ? renderOverlay() : null }
+      <Alert Message="Work in Progress" />
       <div className="container">
       
       <Header 
