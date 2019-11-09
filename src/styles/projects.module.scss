@@ -16,25 +16,50 @@
   flex-direction: column;
   
   @include tablet {
-    margin: 0px 50px;
+    margin: 0px 25px;
   }
 
   @include desktop-large {
-    margin: 0px 50px;
+    margin: 0px 25px;
   }
 }
 
 .titleWrapper {
-  max-width: 800px;
-  margin: 40px 0px 0px 0px;
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+
+  @include tablet {
+    display: block;
+    margin: 20px 0px 0px 50px;
+  }
+
+  @include desktop-large {
+    margin: 20px 0px 0px 50px;
+
+  }
 }
 
 
 
 .projectRow{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   flex: 1;
+  flex-direction: column;
+  margin: 0px 0px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include desktop-large {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer {

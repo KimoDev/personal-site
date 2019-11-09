@@ -22,19 +22,16 @@ const Project = () => {
         icon={require('../images/icons/burger-menu.svg')}/>
         <div className={styles.titleWrapper}>
           <h1>Projects I've been working on</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-          Cum fugit aliquid quaerat voluptatum nulla in facere laudantium 
-          reiciendis natus quia voluptates consequuntur cupiditate expedita, 
-          nam aperiam illum, perspiciatis cumque. Maxime?
+          <p>An insight of what i'm currently working on or projects i've worked on in the past.
           </p>
         </div>
         <div className={styles.projectRow}>
-          <ProjectContainer />
-          <ProjectContainer />
+          <ProjectContainer title={"Weather Application"} type={"Web Application"}/>
+          <ProjectContainer title={"The FreshDev"} type={"E-commerce store"}/>
         </div>
         <div className={styles.projectRow}>
-          <ProjectContainer />
-          <ProjectContainer />
+          <ProjectContainer title={"IRIS"} type={"Mobile Application"}/>
+          <ProjectContainer title={"Another project"} type={"Software Application"}/>
         </div>
         <div className={styles.footer}>
         

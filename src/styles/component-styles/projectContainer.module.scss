@@ -1,9 +1,19 @@
+@import '../config//mixins';
+
 .ProjectContainer {
   margin: 25px 0px;
+  width: 100%;
+
+  @include tablet {
+    margin: 25px;
+  }
+
+  @include desktop-large {
+    margin: 25px;
+  }
 }
 
 .imageWrapper {
-  width: 500px;
   height: 300px;
   background-color: #80AED0;
 }
