@@ -38,7 +38,7 @@ const HomePage = () => {
   return (
     <div>
     {nav ? renderOverlay() : null }
-      <Alert Message="Work in Progress" />
+      <Alert Message="This site is a work in progress" />
       <div className="container">
       
       <Header 
