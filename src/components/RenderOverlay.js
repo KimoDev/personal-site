@@ -11,7 +11,7 @@ const RenderOverlay = ({nav, toggleNav}) => {
         <div className={overlayStyles.container}>
           <Header 
           navClicked={() => toggleNav(!nav)} 
-          icon={require('../images/icons/close-icon.svg')}/>
+          icon={require('../images/icons/close-icon.svg')} style={{margin: "0px", width: '100%'}}/>
           <Overlay nav={nav}/>
           <div className={overlayStyles.footer}>
   <FooterOverlay /> 

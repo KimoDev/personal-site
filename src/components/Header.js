@@ -7,7 +7,7 @@ import logo from '../images/kimo-logo.png';
 const Header = (props) => {
   
     return (
-      <div className="header">
+      <div className="header" style={props.style}>
         
           <Link to='/'><img src={logo} alt="Logo" className="logo"/></Link>
           

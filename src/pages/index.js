@@ -18,7 +18,7 @@ const HomePage = () => {
       
       <Header 
       navClicked={() => toggleNav(!nav)} 
-      icon={require('../images/icons/burger-menu.svg')}/>
+      icon={require('../images/icons/burger-menu.svg')} style={{margin: "0px"}}/>
       
       <div className={styles.wrapper}>
 
